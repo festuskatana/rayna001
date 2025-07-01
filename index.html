@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somoe - Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <h1 class="logo"><a href="#">Somoe</a></h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero" class="hero-section">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <p class="hero-intro reveal-text">Hi, I'm</p>
+                <h2 class="hero-headline reveal-text">Somoe, a <span class="highlight">Creative Professional</span></h2>
+                <p class="hero-description reveal-text">Crafting beautiful and functional designs. Let's build something amazing together.</p>
+                <a href="#portfolio" class="btn btn-primary animate-btn">View My Work</a>
+            </div>
+            <div class="hero-image-wrapper reveal-image">
+                <img src="images/somz.jpg" alt="Your Profile Picture" class="profile-pic">
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section section-padding">
+        <div class="container">
+            <h2 class="section-title reveal-on-scroll">About Me</h2>
+            <div class="about-content">
+                <div class="about-text reveal-on-scroll">
+                    <p>Welcome! I am a passionate designer with 2 years of experience in designing. My journey began with a curiosity for how things work and a desire to bring ideas to life digitally.</p>
+                    <p>I thrive on solving complex problems and transforming them into elegant, intuitive designs. I believe in continuous learning and staying updated with the latest industry trends to deliver cutting-edge solutions.</p>
+                    <p>When I'm not designing, you can find me in singing, reading sci-fi, or perfecting my coffee brewing skills.</p>
+                </div>
+                <div class="about-skills reveal-on-scroll">
+                    <h3>My Skills</h3>
+                    <ul class="skill-list">
+                        <li>HOUSE DESIGN <span class="skill-bar html-css" data-level="95"></span></li>
+                        <li>CRITICAL THINKING <span class="skill-bar js" data-level="85"></span></li>
+                        <li>DRESS DESIGN <span class="skill-bar react" data-level="75"></span></li>
+                        <li>SHOE DESIGN <span class="skill-bar ui-ux" data-level="90"></span></li>
+                        <li>GRAPHIC DESIGN <span class="skill-bar graphic" data-level="80"></span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio-section section-padding">
+        <div class="container">
+            <h2 class="section-title reveal-on-scroll">My Portfolio</h2>
+
+            <div class="portfolio-filters reveal-on-scroll">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web-design">House Design</button>
+                <button class="filter-btn" data-filter="graphic-design">Graphic Design</button>
+                <button class="filter-btn" data-filter="photography">Dress Design</button>
+            </div>
+
+            <div class="portfolio-grid">
+                <div class="portfolio-item reveal-on-scroll" data-category="web-design">
+                    <img src="images/project1.jpeg" alt="Project 1 Thumbnail">
+                    <div class="portfolio-overlay">
+                        <h3>Dress Design</h3>
+                        <p>A brief description of dress design.</p>
+                        <button class="view-project-btn" data-project-id="1">View Project</button>
+                    </div>
+                </div>
+                <div class="portfolio-item reveal-on-scroll" data-category="graphic-design">
+                    <img src="images/project2.jpeg" alt="Project 2 Thumbnail">
+                    <div class="portfolio-overlay">
+                        <h3>Graphic Design</h3>
+                        <p>A brief description of graphic design.</p>
+                        <button class="view-project-btn" data-project-id="2">View Project</button>
+                    </div>
+                </div>
+                <div class="portfolio-item reveal-on-scroll" data-category="photography">
+                    <img src="images/project3.jpeg" alt="Project 3 Thumbnail">
+                    <div class="portfolio-overlay">
+                        <h3>Shirt Design</h3>
+                        <p>A brief description of shirt design.</p>
+                        <button class="view-project-btn" data-project-id="3">View Project</button>
+                    </div>
+                </div>
+                <div class="portfolio-item reveal-on-scroll" data-category="web-design">
+                    <img src="images/project4.jpeg" alt="Project 4 Thumbnail">
+                    <div class="portfolio-overlay">
+                        <h3>House Design</h3>
+                        <p>A brief description of house design.</p>
+                        <button class="view-project-btn" data-project-id="4">View Project</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services-section section-padding">
+        <div class="container">
+            <h2 class="section-title reveal-on-scroll">My Services</h2>
+            <div class="services-grid">
+                <div class="service-card reveal-on-scroll">
+                    <i class="fas fa-house icon"></i>
+                    <h3>House Design</h3>
+                    <p>Creating responsive, modern and functional houses.</p>
+                </div>
+                <div class="service-card reveal-on-scroll">
+                    <i class="fas fa-shoe-prints icon"></i>
+                    <h3>Shoe Design</h3>
+                    <p>Focusing on innovative designs and comfortable footwear.</p>
+                </div>
+                <div class="service-card reveal-on-scroll">
+                    <i class="fas fa-camera icon"></i>
+                    <h3>Photography</h3>
+                    <p>Professional photography services for events, products, and portraits.</p>
+                </div>
+                <div class="service-card reveal-on-scroll">
+                    <i class="fas fa-pencil-ruler icon"></i>
+                    <h3>Brand Identity</h3>
+                    <p>Developing unique and memorable brand identities that resonate with your audience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section section-padding">
+        <div class="container">
+            <h2 class="section-title reveal-on-scroll">Get in Touch</h2>
+            <div class="contact-content">
+                <div class="contact-form-wrapper reveal-on-scroll">
+                    <form action="#" method="POST" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject:</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-secondary animate-btn">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info reveal-on-scroll">
+                    <h3>My Details</h3>
+                    <p><i class="fas fa-envelope"></i> somoe25@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +254 745 976866</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Bamburi, Mombasa County, Kenya</p>
+                    <div class="social-links">
+                        <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin fa-2x"></i></a>
+                        <a href="#" target="_blank" aria-label="GitHub"><i class="fab fa-github fa-2x"></i></a>
+                        <a href="#" target="_blank" aria-label="Twitter"><i class="fab fa-twitter fa-2x"></i></a>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 Somoe. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <div id="portfolioModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h3 id="modalProjectTitle"></h3>
+            <img src="" alt="" id="modalProjectImage">
+            <p id="modalProjectDescription"></p>
+            <div class="modal-buttons">
+                <a href="#" target="_blank" id="modalLiveDemoBtn" class="btn btn-secondary">Live Demo</a>
+                <a href="#" target="_blank" id="modalGithubBtn" class="btn btn-secondary">GitHub Repo</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="portfolio.js"></script>
+</body>
+</html>
