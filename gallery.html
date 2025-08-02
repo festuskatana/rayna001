@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raya's Galery </title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header with Mobile Menu -->
+    <header class="header">
+        <a href="index.html" class="logo">Raya<span>.</span></a>
+        
+        <!-- Desktop Navigation -->
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="gallery.html" class="active">Gallery</a>
+            <a href="service.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        
+        <!-- Mobile Menu Toggle -->
+        <div class="menu-toggle">
+            <i class='bx bx-menu'></i>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="mobile-menu">
+            <a href="index.html">Home</a>
+            <a href="gallery.html" class="active">Gallery</a>
+            <a href="service.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </header>
+
+<!-- Gallery Section -->
+    <section class="gallery">
+        <h2 class="heading">My <span>Gallery</span></h2>
+        
+        <div class="slideshow-container">
+            <!-- Slides -->
+            <div class="mySlides fade">
+                <img src="raya1.jpg" alt="Gallery Image 1">
+                <div class="caption">Beach Photoshoot - 2025</div>
+            </div>
+            
+            <div class="mySlides fade">
+                <img src="raya.jpg" alt="Gallery Image 2">
+                <div class="caption">Dance Performance - Nairobi</div>
+            </div>
+            
+            <div class="mySlides fade">
+                <img src="raya3.jpg" alt="Gallery Image 3">
+                <div class="caption">Brand Collaboration - Mombasa</div>
+            </div>
+            
+            <div class="mySlides fade">
+                <img src="raya4.jpg" alt="Gallery Image 4">
+                <div class="caption">Travel Vlog - Watamu</div>
+            </div>
+            
+            <div class="mySlides fade">
+                <img src="raya6.jpg" alt="Gallery Image 5">
+                <div class="caption">Fitness Challenge</div>
+            </div>
+            
+            <!-- Navigation arrows -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        
+        <!-- Thumbnail dots -->
+        <div class="dots-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+    </section>
+
+   <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2025 by Raya | All Rights Reserved.</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+    <script src="gallery.js"></script>
+</body>
+</html>

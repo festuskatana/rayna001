@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raya's Services</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.jpg" type="image/x-icon">
+</head>
+<body>
+    <!-- Header with Mobile Menu -->
+    <header class="header">
+        <a href="index.html" class="logo">Raya<span>.</span></a>
+        
+        <!-- Desktop Navigation -->
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="service.html" class="active">Services</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        
+        <!-- Mobile Menu Toggle -->
+        <div class="menu-toggle">
+            <i class='bx bx-menu'></i>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="mobile-menu">
+            <a href="index.html">Home</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="service.html" class="active">Services</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </header>
+
+  <!-- Services Section -->
+    <section class="services-section">
+        <div class="services-header">
+            <h2>My <span>Services</span></h2>
+            <p>Professional content creation services with instant M-Pesa payment</p>
+        </div>
+
+        <div class="services-container">
+            <!-- Service Card 1 -->
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class='bx bx-video-recording'></i>
+                    <div class="icon-bg"></div>
+                </div>
+                <h3>Basic Video Package</h3>
+                <p>1 professionally edited social media video (up to 60 seconds)</p>
+                <ul class="service-features">
+                    <li><i class='bx bx-check'></i> 1 concept development</li>
+                    <li><i class='bx bx-check'></i> Basic editing</li>
+                    <li><i class='bx bx-check'></i> 1 revision</li>
+                </ul>
+                <div class="service-footer">
+                    <span class="price">KSh 5,000</span>
+                    <button class="btn book-btn" data-service="Basic Video Package" data-price="5000">Book Now</button>
+                </div>
+            </div>
+
+            <!-- Service Card 2 -->
+            <div class="service-card featured">
+                <div class="featured-badge">Most Popular</div>
+                <div class="service-icon">
+                    <i class='bx bx-movie-play'></i>
+                    <div class="icon-bg"></div>
+                </div>
+                <h3>Premium Video Package</h3>
+                <p>3 high-quality social media videos with advanced editing</p>
+                <ul class="service-features">
+                    <li><i class='bx bx-check'></i> 3 unique concepts</li>
+                    <li><i class='bx bx-check'></i> Advanced editing</li>
+                    <li><i class='bx bx-check'></i> 2 revisions per video</li>
+                </ul>
+                <div class="service-footer">
+                    <span class="price">KSh 12,000</span>
+                    <button class="btn book-btn" data-service="Premium Video Package" data-price="12000">Book Now</button>
+                </div>
+            </div>
+
+            <!-- Service Card 3 -->
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class='bx bx-trending-up'></i>
+                    <div class="icon-bg"></div>
+                </div>
+                <h3>Brand Collab Package</h3>
+                <p>Complete brand promotion across my social platforms</p>
+                <ul class="service-features">
+                    <li><i class='bx bx-check'></i> 3 dedicated posts</li>
+                    <li><i class='bx bx-check'></i> 1 story per day for 7 days</li>
+                    <li><i class='bx bx-check'></i> Product showcase video</li>
+                </ul>
+                <div class="service-footer">
+                    <span class="price">KSh 25,000</span>
+                    <button class="btn book-btn" data-service="Brand Collab Package" data-price="25000">Book Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Modal -->
+    <div class="payment-modal" id="paymentModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3>Complete Your Booking</h3>
+            <form id="paymentForm">
+                <div class="form-group">
+                    <label for="serviceName"></label>
+                    <input type="text" id="serviceName" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="servicePrice">:</label>
+                    <input type="text" id="servicePrice" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="clientName"></label>
+                    <input type="text" id="clientName" placeholder="Full Names" required>
+                </div>
+                <div class="form-group">
+                    <label for="phoneNumber"></label>
+                    <input type="tel" id="phoneNumber" placeholder="e.g. 254712345678" required>
+                </div>
+                <div class="form-group">
+                    <label for="email"></label>
+                    <input type="email" id="email" placeholder="Email Address" required>
+                </div>
+                <div class="form-group">
+                    <label for="details"></label>
+                    <textarea id="details" rows="4" placeholder="project details" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">
+                    <span>Complete Payment</span>
+                    <i class='bx bx-money'></i>
+                </button>
+            </form>
+         
+        </div>
+    </div>
+
+    <!-- Payment Success Modal -->
+    <div class="success-modal" id="successModal">
+        <div class="success-content">
+            <i class='bx bx-check-circle'></i>
+            <h3>Payment Successful!</h3>
+            <p>Thank you for your booking. I'll contact you within 24 hours to discuss your project details.</p>
+            <button class="btn" id="closeSuccess">Done</button>
+        </div>
+    </div>
+
+            <!-- Testimonials Section -->
+        <div class="testimonials">
+            <h3>What Clients Say</h3>
+            <div class="testimonial-slider">
+                <div class="testimonial active">
+                    <p>"Raya's content increased our engagement by 300% in just one month!"</p>
+                    <div class="client">
+                        <img src="pammy2.jpg" alt="Client">
+                        <div class="client-info">
+                            <h4>Pauline K.</h4>
+                            <span>Beauty Brand Owner</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <p>"The videos she created perfectly captured our brand's personality."</p>
+                    <div class="client">
+                        <img src="somz.jpg" alt="Client">
+                        <div class="client-info">
+                            <h4>Somz M.</h4>
+                            <span>Restaurant Manager</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <h3>Frequently Asked Questions</h3>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h4>How long does content creation take?</h4>
+                    <i class='bx bx-chevron-down'></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Most projects are completed within 5-7 business days. Rush delivery is available for an additional fee.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h4>Do you work with international brands?</h4>
+                    <i class='bx bx-chevron-down'></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes! I've collaborated with brands across Africa, Europe, and North America. Remote work is available.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h4>What's included in your packages?</h4>
+                    <i class='bx bx-chevron-down'></i>
+                </div>
+                <div class="faq-answer">
+                    <p>All packages include concept development, filming, editing, and 2 rounds of revisions.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h4>How do payments work?</h4>
+                    <i class='bx bx-chevron-down'></i>
+                </div>
+                <div class="faq-answer">
+                    <p>A 50% deposit is required to book, with the balance due upon project completion.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-about">
+                <h3>About Raya</h3>
+                <p>Professional content creator based in Mombasa, Kenya</p>
+                <div class="footer-social">
+                    <a href="https://tiktok.com/@user9079599356150" target="_blank"><i class='bx bxl-tiktok'></i></a>
+                    <a href="https://instagram.com/@rayna-001#" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
+                    <a href="https://snapchat.com/@celebkerry45" target="_blank"><i class='bx bxl-snapchat'></i></a>
+                </div>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact</h3>
+                <p><i class='bx bx-phone'></i> +254 103 959913</p>
+                <p><i class='bx bx-envelope'></i> queenraya@gmail.com</p>
+                <p><i class='bx bx-map'></i> Mombasa, Kenya</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Raya. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="service.js"></script>
+</body>
+</html>
